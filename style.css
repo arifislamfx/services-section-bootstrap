@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+span {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.section__head {
+    margin-bottom: 30px;
+}
+.section__head h4 {
+    position: relative;
+    font-size: 34px;
+    letter-spacing: 0.5px;
+    color: #1a1b40;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.section__head h4::before {
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 3px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -10px;
+    background: red;
+}
+.section__head h4 span {
+    font-weight: 700;
+    padding-bottom: 5px;
+    color: #f91942;
+}
+.item {
+    background: #fff;
+    text-align: center;
+    padding: 30px 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 5px solid rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.item:hover {
+    background: #f91942;
+    box-shadow: 0 8px 20 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.5s ease 0s;;
+    transition: all 0.5s ease 0s;
+    color: #fff;
+    cursor: pointer;
+}
+
+.item:hover .item,
+.item:hover span.icon {
+    background: #fff;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease 0s;;
+    transition: all 0.5s ease 0s;
+}
+.item .icon {
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #f91942;
+    width: 90px;
+    height: 90px;
+    line-height: 96px;
+    border-radius: 50px;
+}
+.item .feature__box1 {
+    background: rgba(247, 198, 5, 0.2);
+    color: #f91942;
+}
+.item .feature__box2 {
+    background: rgba(255, 77, 28, 0.15);
+    color: #f91942;
+}
+.item .feature__box3 {
+    background: rgba(0, 147, 38, 0.2);
+    color: #f91942;
+}
+.item .feature__box4 {
+    background: rgba(0, 108, 255, 0.15);
+    color: #f91942;
+}
+.item .feature__box5 {
+    background: rgba(146, 39, 255, 0.15);
+    color: #f91942;
+}
+.item .feature__box6 {
+    background: rgba(23, 39, 246, 0.15);
+    color: #f91942;
+}
+.item p {
+    font-size: 15px;
+    line-height: 25px;
+}
+.item h6 {
+    margin-bottom: 20px;
+    color: #2f2f2f;
+}
